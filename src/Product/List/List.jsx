@@ -18,7 +18,9 @@ function List() {
       {groupedProducts.map((group, groupIndex) => (
         <div className="row" key={groupIndex}>
           {group.map((produto) => (
+
             <div className="col-md-4" key={produto.id}>
+              <a href={`/product/${produto.id}`}  className="my-link-personal">
                 <div className="row m-3 hoover">
                     <div className="col-5">
                         <img src={produto.imagem} width="120" height="120" alt={produto.titulo} />
@@ -32,8 +34,9 @@ function List() {
                         </div>
                     </div>
                 </div>
-
+              </a>
             </div>
+
           ))}
         </div>
       ))}

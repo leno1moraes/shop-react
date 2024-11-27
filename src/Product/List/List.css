@@ -1,9 +1,14 @@
 /* Adicionando estilo para a classe .hoover */
 .hoover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .hoover:hover {
-    transform: scale(1.3); /* Aumenta ligeiramente o tamanho */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra para o efeito */
-  }
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hoover:hover {
+  transform: scale(1.3); /* Aumenta ligeiramente o tamanho */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra para o efeito */
+}
+
+.my-link-personal{
+  text-decoration: none;
+  color: black;
+}

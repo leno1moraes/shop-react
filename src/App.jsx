@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import List from './Product/List/List'
+import Demo from './Product/Demo/Demo'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 function App() {
@@ -13,7 +13,12 @@ function App() {
   return (
     <>
       <Header></Header>
-      <List></List>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<List />} />
+            <Route path="/product/:id" element={<Demo />} />
+          </Routes>
+        </BrowserRouter>
       <Footer></Footer>
     </>
   )
